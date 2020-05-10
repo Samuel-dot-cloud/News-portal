@@ -14,8 +14,8 @@ public interface DepartmentsDao {
     List<Departments>getAllDepartments();
 
     //M:M r-ship
-    void addDptToEmployees(Departments departments, Users users);
-    List<Users> getAllEmployeesBelongingToDepartment(int user_id);
+    void addDptToUsers(Departments departments, Users users);
+    List<Users> getAllUsersBelongingToDepartment(int user_id);
 
     //find and get news of a department by id
     Departments findById(int id);
