@@ -17,15 +17,28 @@ import static spark.Spark.*;
 
 
 public class App {
+
+    static int getHerokuAssignedPort() {
+        ProcessBuilder processBuilder = new ProcessBuilder();
+        if (processBuilder.environment().get("PORT") != null) {
+            return Integer.parseInt(processBuilder.environment().get("PORT"));
+        }
+        return 4567; //return default port if heroku-port isn't set (i.e. on localhost)
+    }
+
     public static void main(String[] args) {
+
+        port(getHerokuAssignedPort());
+        staticFileLocation("/public");
+
         Sql2oDepartmentsDao departmentsDao;
         Sql2oNewsDao newsDao;
         Sql2oUsersDao usersDao;
         Connection conn;
         Gson gson = new Gson();
 
-        String connectionString = "jdbc:postgresql://localhost:5432/news_api";
-        Sql2o sql2o = new Sql2o(connectionString, "postgres", "1234");
+        String connectionString = "jdbc:postgresql://ec2-52-202-22-140.compute-1.amazonaws.com:5432/deog4jj1naqp25";
+        Sql2o sql2o = new Sql2o(connectionString, "ymcidiynjsffzs", "2eecb1c869ad09934d91ac2cdda05526991ea6bbb6ab94e45a5e9cb9d530dfa2");
 
         departmentsDao = new Sql2oDepartmentsDao(sql2o);
         usersDao = new Sql2oUsersDao(sql2o);

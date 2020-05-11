@@ -1,0 +1,11 @@
+/home/samuel/IdeaProjects/news-api/src/main/java/dao/NewsDao.java
+/home/samuel/IdeaProjects/news-api/src/main/java/dao/Sql2oUsersDao.java
+/home/samuel/IdeaProjects/news-api/src/main/java/dao/Sql2oNewsDao.java
+/home/samuel/IdeaProjects/news-api/src/main/java/models/Departments.java
+/home/samuel/IdeaProjects/news-api/src/main/java/models/News.java
+/home/samuel/IdeaProjects/news-api/src/main/java/dao/Sql2oDepartmentsDao.java
+/home/samuel/IdeaProjects/news-api/src/main/java/dao/UsersDao.java
+/home/samuel/IdeaProjects/news-api/src/main/java/dao/DepartmentsDao.java
+/home/samuel/IdeaProjects/news-api/src/main/java/models/Users.java
+/home/samuel/IdeaProjects/news-api/src/main/java/exceptions/ApiException.java
+/home/samuel/IdeaProjects/news-api/src/main/java/App.java
