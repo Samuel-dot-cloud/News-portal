@@ -7,9 +7,10 @@ private int dpt_id;
 private String name;
 
 public News(String content, int dpt_id, String name){
+    this.name = name;
     this.content =content;
     this.dpt_id = dpt_id;
-    this.name = name;
+
 }
 
 public int getId(){

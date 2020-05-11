@@ -93,7 +93,7 @@ public class App {
             return gson.toJson(newsDao.getAllNews());
         });
 
-
+// Adding a user to a department
         post("/departments/:dpt_id/users/new", "application/json", (req, res) -> {
             int dpt_id = Integer.parseInt(req.params("dpt_id"));
             Users users = gson.fromJson(req.body(), Users.class);
@@ -124,7 +124,7 @@ public class App {
 
 
 //        Assign a department to a user
-        post("/users/user_id/departments/:dpt_id","application/json",(request, response) -> {
+        post("/users/:user_id/departments/:dpt_id","application/json",(request, response) -> {
             int user_id = Integer.parseInt(request.params("user_id"));
             int dpt_id = Integer.parseInt(request.params("dpt_id"));
             Users userFound = usersDao.findById(user_id);
@@ -142,7 +142,7 @@ public class App {
         });
 
 
-
+// Getting users already associated with departments
         get("/users/:user_id/departments","application/json",(request, response) -> {
             int user_id = Integer.parseInt(request.params("user_id"));
             Users usersTofind = usersDao.findById(user_id);
