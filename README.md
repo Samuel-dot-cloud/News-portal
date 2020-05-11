@@ -95,7 +95,7 @@ The project is a Java REST API application built with GSON serialization/deseria
 - Postgresql.
 
 ### KNOWN BUGS.
----------------
+A small problem querying data from the departments route, but it should be resolved soon.
 
 ### CONTACT INFORMATION.
 For more information, feel free to contact me through the email address: samdot@gmail.com
