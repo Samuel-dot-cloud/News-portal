@@ -28,7 +28,7 @@ The project is a Java REST API application built with GSON serialization/deseria
 
 ## API Documentation.
 --------------------
-###### User :man_scientist:
+### User :man_scientist:
 * Accessing all user(s):https://news-api5.herokuapp.com/users
 
 * Creating a user:https://news-api5.herokuapp.com/users/new
@@ -51,7 +51,7 @@ The project is a Java REST API application built with GSON serialization/deseria
 * Adding a user to a department:https://news-api5.herokuapp.com/departments/:dpt_id/users/new
   - `Remember to replace :dpt_id with id of logged department.`
   
-  ###### Departments :phone::phone:
+  ### Departments :phone::phone:
 * Accessing all departments:https://news-api5.herokuapp.com/departments
 * Creating a department:https://news-api5.herokuapp.com/departments/new
   > {
@@ -71,7 +71,7 @@ The project is a Java REST API application built with GSON serialization/deseria
 * Assign a department to a user:https://news-api5.herokuapp.com/users/:user_id/departments/:dpt_id
   - `Remember to replace :user_id and :dpt_id with specific id of user and department. `   
   
-  ###### News :newspaper::newspaper:
+  ### News :newspaper::newspaper:
  * Accessing all news updates:https://news-api5.herokuapp.com/news
  * Adding a news update:https://news-api5.herokuapp.com/news/new
    > {
