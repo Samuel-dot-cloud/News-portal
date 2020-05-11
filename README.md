@@ -89,9 +89,9 @@ The project is a Java REST API application built with GSON serialization/deseria
 - Java.
 - Gradle.
 - JUnit.
-- [GSON] (https://github.com/google/gson).
+- [GSON](https://github.com/google/gson).
 - Heroku web hosting service.
-- [Postman] (https://www.postman.com/).
+- [Postman](https://www.postman.com/).
 - Postgresql.
 
 ### KNOWN BUGS.
